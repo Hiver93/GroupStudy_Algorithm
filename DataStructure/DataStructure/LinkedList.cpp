@@ -24,7 +24,7 @@ class CLinkedList
 public:
 	Node* head = nullptr;
 	
-	// 노드 추가 암수 Append
+	// 노드 추가 함수 Append
 	void Append(int i)
 	{
 		if (head == nullptr)
