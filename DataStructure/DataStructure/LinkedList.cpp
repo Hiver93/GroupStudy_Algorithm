@@ -1,6 +1,7 @@
 #include <iostream>
 #include <list>
 
+//CreateNode 노드 생성
 //Append 노드 추가
 //GetNodeAt 탐색 : 임의의 위치 노드 반환
 //RemoveNode 노드 삭제
@@ -13,6 +14,7 @@ public:
 	int data;
 	Node* prev = nullptr;
 	Node* next = nullptr;
+
 	Node(int i)
 	{
 		this->data = i;
@@ -24,18 +26,24 @@ class CLinkedList
 public:
 	Node* head = nullptr;
 	
+	Node* CreateNode(int i)
+	{
+		Node* node = new Node(i);
+		return node;
+	}
+
 	// 노드 추가 함수 Append
 	void Append(int i)
 	{
 		if (head == nullptr)
 		{
-			head = new Node(i);
+			head = CreateNode(i);
 			head->next = head;
 			head->prev = head;
 		}
 		else
 		{
-			Node* tail = new Node(i);
+			Node* tail = CreateNode(i);
 			head->prev->next = tail; // head->prev 은 기존 tail
 			tail->prev = head->prev;
 			tail->next = head;
@@ -60,18 +68,20 @@ public:
 		if (head->next == head)
 		{
 			delete head;
+			head = nullptr;
 		}
 		else
 		{
 			node->next->prev = node->prev;
 			node->prev->next = node->next;
 			delete node;
+			node = nullptr;
 		}
 	}
 
 	void Insert(Node* node, int i)
 	{
-		Node* temp = new Node(i);
+		Node* temp = CreateNode(i);
 		temp->prev = node->prev;
 		node->prev = temp;
 		temp->prev->next = temp;
@@ -116,6 +126,7 @@ public:
 				head = head->next;
 			}
 			delete head;
+
 		}
 	}
 	
