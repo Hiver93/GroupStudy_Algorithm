@@ -1,5 +1,4 @@
 ﻿  main.cpp
-C:\Users\김도원\Documents\GitHub\GroupStudy_Algorithm\DataStructure\Calculator2\main.cpp(141,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\김도원\Documents\GitHub\GroupStudy_Algorithm\DataStructure\Calculator2\main.cpp(228,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\김도원\Documents\GitHub\GroupStudy_Algorithm\DataStructure\Calculator2\main.cpp(125): warning C4715: 'Calculator::Operate': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\Users\김도원\Documents\GitHub\GroupStudy_Algorithm\DataStructure\Calculator2\main.cpp(146,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\김도원\Documents\GitHub\GroupStudy_Algorithm\DataStructure\Calculator2\main.cpp(298,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
   Calculator2.vcxproj -> C:\Users\김도원\Documents\GitHub\GroupStudy_Algorithm\DataStructure\Debug\Calculator2.exe

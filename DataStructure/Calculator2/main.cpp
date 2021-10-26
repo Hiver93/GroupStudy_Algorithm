@@ -57,6 +57,11 @@ public:
 		top++;
 		nodeList[top] = CreateNewNode(data);
 	}
+	void Push(char data)
+	{
+		top++;
+		nodeList[top] = CreateNewNode(data);
+	}
 
 	double Pop()
 	{
@@ -159,9 +164,12 @@ public:
 					if (inputData[i] == '.')
 					{
 						i++;
-						temp += ((inputData[i] - (double)'0') / decimalCount);
-						decimalCount *= 10;
-						i++;
+						while ('0' <= inputData[i] && inputData[i] <= '9')
+						{
+							temp += ((inputData[i] - (double)'0') / decimalCount);
+							decimalCount *= 10;
+							i++;
+						}
 					}
 					else
 					{
@@ -173,7 +181,7 @@ public:
 				tokenList[index] = new Token(temp);
 				index++;
 			}
-			if ('*' <= inputData[i] && inputData[i] <= '/')
+			if ('*' <= inputData[i] && inputData[i] <= '/'|| inputData[i] == '(' || inputData[i] == ')')
 			{
 				tokenList[index] = new Token(inputData[i]);
 				index++;
@@ -203,7 +211,7 @@ public:
 			{
 				if (arrStack.GetCount() < 2)
 				{
-					std::cout << "오류 : 잘못된 표기식입니다." << std::endl;
+					std::cout << "오류 : 잘못된 계산식입니다." << std::endl;
 					return;
 				}
 				else
@@ -217,10 +225,72 @@ public:
 		}
 		if (arrStack.GetCount() != 1)
 		{
-			std::cout << "오류 : 잘못된 표기식입니다." << std::endl;
+			std::cout << "오류 : 잘못된 계산식입니다." << std::endl;
 		}
 		else
 			std::cout << arrStack.Pop() <<std::endl;
+	}
+
+	void GetPostfix(const char* inputData)
+	{
+		SetToken(inputData);	    
+		int i = 0;
+		int isPrepared = 0;
+		int but = 0;
+		ArrayStack arrStack = ArrayStack(tokenList.size());
+		while (tokenList[i] != nullptr)
+		{
+			if (tokenList[i]->isNumber)
+			{
+				std::cout << tokenList[i]->token << " ";
+				if (isPrepared&&!but)
+				{
+					std::cout << (char)arrStack.Pop() << " ";
+					isPrepared--;
+				}
+				i++;
+			}
+			else
+			{
+				if(tokenList[i]->token == '*'|| tokenList[i]->token == '/')
+				{
+					arrStack.Push((char)tokenList[i]->token);
+					isPrepared++;
+				}
+				else if (tokenList[i]->token == ')')
+				{
+					char temp;
+					while (1)
+					{
+						temp = (char)arrStack.Pop();
+						if (temp == '(')
+						{
+							but--;
+							if (isPrepared)
+							{
+								std::cout << (char)arrStack.Pop() << " ";
+							}
+							break;
+						}
+						std::cout << temp << " ";
+					}
+				}
+				else
+				{
+					if ((char)tokenList[i]->token == '(')
+					{
+						but++;
+					}
+					arrStack.Push((char)tokenList[i]->token);
+				}
+				i++;
+			}
+		}
+		while(arrStack.GetCount() != 0)
+		{
+			std::cout << (char)arrStack.Pop() << " ";
+		}
+
 	}
 
 	~Calculator()
@@ -237,10 +307,12 @@ public:
 
 int main()
 {
-	char arr[30] = "12 2 3 +";
+	char arr[30] = "12 2 3 + +";
 	Calculator cal = Calculator();
 	cal.Calculate(arr);
+	char arr2[30] = "12 + 3 * (4 + 2) / 1.58";
 
+	cal.GetPostfix(arr2);
 
 	return 0;
 }
