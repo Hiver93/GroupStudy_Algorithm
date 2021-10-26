@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkedList", "DataStructure
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Stack", "Stack\Stack.vcxproj", "{E4B436C9-9CD7-4839-A1A7-4A6E589CD616}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Calculator2", "Calculator2\Calculator2.vcxproj", "{AA38CD5D-3ED9-4A5F-AF61-F5596BF865A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{E4B436C9-9CD7-4839-A1A7-4A6E589CD616}.Release|x64.Build.0 = Release|x64
 		{E4B436C9-9CD7-4839-A1A7-4A6E589CD616}.Release|x86.ActiveCfg = Release|Win32
 		{E4B436C9-9CD7-4839-A1A7-4A6E589CD616}.Release|x86.Build.0 = Release|Win32
+		{AA38CD5D-3ED9-4A5F-AF61-F5596BF865A7}.Debug|x64.ActiveCfg = Debug|x64
+		{AA38CD5D-3ED9-4A5F-AF61-F5596BF865A7}.Debug|x64.Build.0 = Debug|x64
+		{AA38CD5D-3ED9-4A5F-AF61-F5596BF865A7}.Debug|x86.ActiveCfg = Debug|Win32
+		{AA38CD5D-3ED9-4A5F-AF61-F5596BF865A7}.Debug|x86.Build.0 = Debug|Win32
+		{AA38CD5D-3ED9-4A5F-AF61-F5596BF865A7}.Release|x64.ActiveCfg = Release|x64
+		{AA38CD5D-3ED9-4A5F-AF61-F5596BF865A7}.Release|x64.Build.0 = Release|x64
+		{AA38CD5D-3ED9-4A5F-AF61-F5596BF865A7}.Release|x86.ActiveCfg = Release|Win32
+		{AA38CD5D-3ED9-4A5F-AF61-F5596BF865A7}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

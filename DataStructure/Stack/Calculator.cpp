@@ -37,7 +37,7 @@ public:
 	double Calculate(const char* inputData)
 	{
 		int i = 0;
-		// 사이징 함수 만들 것
+
 		ArrayStack* arrStack = new ArrayStack(SizingStack(inputData));
 		while (inputData[i] != '\0')
 		{
