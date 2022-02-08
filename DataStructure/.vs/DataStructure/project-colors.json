@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "79663864-1f90-43b0-87ca-dbcedde4d9cd": {
+      "ProjectGuid": "79663864-1f90-43b0-87ca-dbcedde4d9cd",
+      "DisplayName": "LinkedList",
+      "ColorIndex": 0
+    },
+    "98ed56f5-566c-4178-9d6f-61f19d5199b3": {
+      "ProjectGuid": "98ed56f5-566c-4178-9d6f-61f19d5199b3",
+      "DisplayName": "Queue",
+      "ColorIndex": 1
+    },
+    "e4b436c9-9cd7-4839-a1a7-4a6e589cd616": {
+      "ProjectGuid": "e4b436c9-9cd7-4839-a1a7-4a6e589cd616",
+      "DisplayName": "Stack",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

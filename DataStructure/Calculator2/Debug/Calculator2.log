@@ -1,4 +1,1 @@
-﻿  main.cpp
-C:\Users\김도원\Documents\GitHub\GroupStudy_Algorithm\DataStructure\Calculator2\main.cpp(146,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\김도원\Documents\GitHub\GroupStudy_Algorithm\DataStructure\Calculator2\main.cpp(298,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-  Calculator2.vcxproj -> C:\Users\김도원\Documents\GitHub\GroupStudy_Algorithm\DataStructure\Debug\Calculator2.exe
+﻿
