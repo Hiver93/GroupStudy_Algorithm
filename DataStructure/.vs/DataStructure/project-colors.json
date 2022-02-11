@@ -15,6 +15,11 @@
       "ProjectGuid": "e4b436c9-9cd7-4839-a1a7-4a6e589cd616",
       "DisplayName": "Stack",
       "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "기타 파일",
+      "ColorIndex": -1
     }
   },
   "NextColorIndex": 3

@@ -8,8 +8,7 @@ private:
 	vector<int> *queue;
 	int front;
 	int rear;
-	int count;
-	int size;
+	int size;	
 
 public:
 	MyQueue(int);
@@ -19,5 +18,8 @@ public:
 	bool IsEmpty();
 	bool IsFull();
 	void PrintAll();
+	int Peek();
+	void Reset();	
+	void Reset(int size);
 };
 

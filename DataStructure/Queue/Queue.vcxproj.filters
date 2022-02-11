@@ -21,9 +21,15 @@
     <ClCompile Include="MyQueue.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="MyLinkedQueue.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyQueue.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLinkedQueue.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
