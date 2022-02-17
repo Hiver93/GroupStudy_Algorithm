@@ -24,12 +24,18 @@
     <ClCompile Include="MyLinkedQueue.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="BurgerSim.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyQueue.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="MyLinkedQueue.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="BurgerSim.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

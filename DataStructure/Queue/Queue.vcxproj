@@ -139,11 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BurgerSim.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MyLinkedQueue.cpp" />
     <ClCompile Include="MyQueue.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BurgerSim.h" />
     <ClInclude Include="MyLinkedQueue.h" />
     <ClInclude Include="MyQueue.h" />
   </ItemGroup>

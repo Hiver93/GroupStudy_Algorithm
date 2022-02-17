@@ -1,6 +1,7 @@
 #include <iostream>
 #include "MyQueue.h"
 #include "MyLinkedQueue.h"
+#include "BurgerSim.h"
 
 int main()
 {
@@ -56,7 +57,7 @@ int main()
 
 	//delete Q;
 
-	MyLinkedQueue* LQ = new MyLinkedQueue();
+	/*MyLinkedQueue* LQ = new MyLinkedQueue();
 
 	LQ->Enqueue(1);
 	LQ->Enqueue(2);
@@ -68,7 +69,10 @@ int main()
 		cout << LQ->Dequeue() << ' ';
 	}
 	LQ->Enqueue(4);
-	LQ->PrintAll();
+	LQ->PrintAll();*/
+
+	BurgerSim burgerSim(10);
+	burgerSim.Simulate();
 
 	return 0;
 }
