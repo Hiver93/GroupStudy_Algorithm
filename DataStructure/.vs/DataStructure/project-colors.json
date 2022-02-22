@@ -20,7 +20,12 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "기타 파일",
       "ColorIndex": -1
+    },
+    "64abb42b-ac57-44f3-9211-832c566034a3": {
+      "ProjectGuid": "64abb42b-ac57-44f3-9211-832c566034a3",
+      "DisplayName": "Tree",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 4
 }
