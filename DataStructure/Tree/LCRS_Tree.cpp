@@ -53,6 +53,27 @@ Node* LCRS_Tree::CreateNode(char data)
 	Node* temp = new Node(data);
 	return temp;
 }
+void LCRS_Tree::DestroyTree()
+{
+	if (root != nullptr)
+	{
+		if (root->LeftChild != nullptr)
+		{
+			DestroyTree(root->LeftChild);
+		}
+		delete root;
+		root = nullptr;
+	}
+}
+void LCRS_Tree::DestroyTree(Node* node)
+{
+	if (node->RightSibling != nullptr)
+		DestroyTree(node->RightSibling);
+	if (node->LeftChild != nullptr)
+		DestroyTree(node->LeftChild);
+	delete node;
+	
+}
 void LCRS_Tree::AddChildNode(Node* parent, Node* child)
 {
 	parent->SetLeftChild(child);
@@ -64,4 +85,31 @@ void LCRS_Tree::PrintTree()
 	std::cout << std::endl;
 	if (temp->LeftChild != nullptr)
 		PrintTree(temp->LeftChild, 1);
+}
+void LCRS_Tree::PrintNodesAtLevel(Node* node, int level)
+{
+	if (level == 0)
+	{
+		std::cout << node->data << ' '; 
+		while (node->RightSibling != nullptr)
+		{
+			node = node->RightSibling;
+			std::cout << node->data << ' ';
+		}
+	}
+	else
+	{
+		if (node->LeftChild != nullptr)
+			PrintNodesAtLevel(node->LeftChild, level - 1);
+		if (node->RightSibling != nullptr)
+			PrintNodesAtLevel(node->RightSibling, level);
+	}
+}
+void LCRS_Tree::PrintNodesAtLevel(int level)
+{
+	if (level == 0)
+		std::cout << root->data << ' ';
+	else
+		PrintNodesAtLevel(root->LeftChild, level - 1);
+	std::cout << std::endl;
 }
