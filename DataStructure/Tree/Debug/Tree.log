@@ -1,2 +1,6 @@
-﻿  main.cpp
+﻿  BinaryTree.cpp
+C:\Users\김도원\Documents\GitHub\GroupStudy_Algorithm\DataStructure\Tree\BinaryTree.h(29,2): warning C4091: 'static ': 변수를 선언하지 않으면 'BinaryTree' 왼쪽은 무시됩니다.
+  main.cpp
+C:\Users\김도원\Documents\GitHub\GroupStudy_Algorithm\DataStructure\Tree\BinaryTree.h(29,2): warning C4091: 'static ': 변수를 선언하지 않으면 'BinaryTree' 왼쪽은 무시됩니다.
+  코드를 생성하고 있습니다...
   Tree.vcxproj -> C:\Users\김도원\Documents\GitHub\GroupStudy_Algorithm\DataStructure\Debug\Tree.exe

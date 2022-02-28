@@ -1,8 +1,12 @@
 #include <iostream>
 #include "LCRS_Tree.h"
+#include "BinaryTree.h"
+
+void ShowIntData(int data);
+
 int main()
 {
-	//Left Child Right Sibling Tree
+	// Left Child Right Sibling Tree
 	{
 		/*LCRS_Tree t;
 		Node* A = t.CreateNode('A');
@@ -36,5 +40,34 @@ int main()
 		t.DestroyTree();*/
 	}
 
-	
+	// Binary Tree, Traverse
+	{
+		BTreeNode* bt1 = BinaryTree::MakeTreeNode();
+		BTreeNode* bt2 = BinaryTree::MakeTreeNode();
+		BTreeNode* bt3 = BinaryTree::MakeTreeNode();
+		BTreeNode* bt4 = BinaryTree::MakeTreeNode();
+
+		BinaryTree::SetData(bt1, 1);
+		BinaryTree::SetData(bt2, 2);
+		BinaryTree::SetData(bt3, 3);
+		BinaryTree::SetData(bt4, 4);
+
+		BinaryTree::MakeLeftSubTree(bt1, bt2);
+		BinaryTree::MakeRightSubTree(bt1, bt3);
+		BinaryTree::MakeLeftSubTree(bt2, bt4);
+
+		printf("%d \n", BinaryTree::GetData(BinaryTree::GetLeftSubTree(bt1)));
+
+		printf("%d \n", BinaryTree::GetData(BinaryTree::GetLeftSubTree(BinaryTree::GetLeftSubTree(bt1))));
+		BinaryTree::InorderTraverse(bt1, ShowIntData);
+		printf("\n");
+		BinaryTree::DeleteTree(bt1);
+	}
+
+
+}
+
+void ShowIntData(int data)
+{
+	printf("%d ", data);
 }
