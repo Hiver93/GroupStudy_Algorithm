@@ -27,4 +27,3 @@ public:
 	static void PostorderTraverse(BTreeNode* bt, VisitFuncPtr action);
 	static void DeleteTree(BTreeNode* bt);
 };
-
