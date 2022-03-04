@@ -25,7 +25,12 @@
       "ProjectGuid": "64abb42b-ac57-44f3-9211-832c566034a3",
       "DisplayName": "Tree",
       "ColorIndex": 3
+    },
+    "be87f1c7-f89b-42d2-8d71-9a25ff06d8de": {
+      "ProjectGuid": "be87f1c7-f89b-42d2-8d71-9a25ff06d8de",
+      "DisplayName": "PriorityQueue",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 5
 }
