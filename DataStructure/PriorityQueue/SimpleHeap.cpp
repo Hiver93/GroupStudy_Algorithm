@@ -60,7 +60,7 @@ int SimpleHeap::GetHiPriChildIdx(int idx)
 {
 	if (idx * 2 < numOfData)
 	{
-		if (heapArr[GetLChildIdx(idx)].data < heapArr[GetRChildIdx(idx)].data)
+		if (heapArr[GetLChildIdx(idx)].pr < heapArr[GetRChildIdx(idx)].pr)
 			return idx * 2;
 		else
 			return idx * 2 + 1;
