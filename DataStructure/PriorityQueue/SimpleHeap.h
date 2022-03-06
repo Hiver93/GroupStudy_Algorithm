@@ -10,7 +10,7 @@ typedef struct _heapElem{
 }HeapElem;
 class SimpleHeap
 {
-private:
+protected:
 	int numOfData;
 	int size;
 	HeapElem* heapArr;
