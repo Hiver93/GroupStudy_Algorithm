@@ -1,7 +1,9 @@
 #include <iostream>
+#include <string>
 //#include "SimpleHeap.h"
-#include "Heap.h"
-bool compare(const char* str1, const char* str2);
+//#include "Heap.h"
+#include "PriorityQueue.h"
+bool compare(std::string str1, std::string str2);
 bool compare1(char a, char b);
 int main()
 {
@@ -28,23 +30,59 @@ int main()
 
 	// UsefulHeap
 	{
-		Heap heap(100,compare1);
+		//Heap heap(100,compare1);
 
-		heap.Insert('A');
-		heap.Insert('B');
-		heap.Insert('C');
-		std::cout << heap.Delete();
+		//heap.Insert('A');
+		//heap.Insert('B');
+		//heap.Insert('C');
+		//std::cout << heap.Delete();
 
-		heap.Insert('A');
-		heap.Insert('B');
-		heap.Insert('C');
-		std::cout << heap.Delete();
+		//heap.Insert('A');
+		//heap.Insert('B');
+		//heap.Insert('C');
+		//std::cout << heap.Delete();
 
-		while(!(heap.IsEmpty()))
+		//while(!(heap.IsEmpty()))
+		//{
+		//	std::cout << heap.Delete();
+		//}
+		//Heap heap(100, compare);
+
+		//heap.Insert("abc");
+		//heap.Insert("def");
+		//heap.Insert("de");
+		//std::cout << heap.Delete();
+
+		//heap.Insert("abc");
+		//heap.Insert("def");
+		//heap.Insert("de");
+		//std::cout << heap.Delete();
+
+		//while (!(heap.IsEmpty()))
+		//{
+		//	std::cout << heap.Delete()<<std::endl;
+		//}
+
+	}
+
+	// PriorityQueue
+	{
+		PriorityQueue pQ(100, compare);
+
+		pQ.Enqueue("abc");
+		pQ.Enqueue("def");
+		pQ.Enqueue("de");
+		std::cout << pQ.Dequeue();
+
+		pQ.Enqueue("abc");
+		pQ.Enqueue("def");
+		pQ.Enqueue("de");
+		std::cout << pQ.Dequeue();
+
+		while (!(pQ.IsEmpty()))
 		{
-			std::cout << heap.Delete();
+			std::cout << pQ.Dequeue() << std::endl;
 		}
-
 	}
 }
 
@@ -55,11 +93,11 @@ bool compare1(char a, char b)
 	return 0;
 }
 
-bool compare(const char* str1, const char* str2)
+bool compare(std::string str1, std::string str2)
 {
-	if (strlen(str1) == strlen(str2))
+	if (str1.length() == str2.length())
 	{
-		for (int i = 0; i < strlen(str1); i++)
+		for (int i = 0; i < str1.length(); i++)
 		{
 			if (str1[i] == str2[i])
 				continue;
@@ -70,7 +108,7 @@ bool compare(const char* str1, const char* str2)
 		}
 		return 0;
 	}
-	else if (strlen(str1) < strlen(str2))
+	else if (str1.length() < str2.length())
 	{
 		return 1;
 	}

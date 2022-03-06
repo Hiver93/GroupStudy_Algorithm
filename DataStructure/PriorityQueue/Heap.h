@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 
-typedef char HData;
+typedef std::string HData;
 typedef bool (*PriorityComp)(HData d1, HData d2);
 
 class Heap
