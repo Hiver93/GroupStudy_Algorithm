@@ -5,7 +5,17 @@
       "ProjectGuid": "0c8acd25-90c9-4fe0-a748-2cf06d802d86",
       "DisplayName": "BubbleSort",
       "ColorIndex": 0
+    },
+    "2afb480b-1d99-4878-9f96-1a9b7a23279a": {
+      "ProjectGuid": "2afb480b-1d99-4878-9f96-1a9b7a23279a",
+      "DisplayName": "SelectionSort",
+      "ColorIndex": 1
+    },
+    "85598b51-8976-46f4-aff7-0971ed1bb7f0": {
+      "ProjectGuid": "85598b51-8976-46f4-aff7-0971ed1bb7f0",
+      "DisplayName": "InsertionSort",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 3
 }
