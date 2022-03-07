@@ -15,7 +15,12 @@
       "ProjectGuid": "85598b51-8976-46f4-aff7-0971ed1bb7f0",
       "DisplayName": "InsertionSort",
       "ColorIndex": 2
+    },
+    "4f8bcb01-adcb-401b-8603-ee70d89e78a9": {
+      "ProjectGuid": "4f8bcb01-adcb-401b-8603-ee70d89e78a9",
+      "DisplayName": "HeapSort",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 4
 }
