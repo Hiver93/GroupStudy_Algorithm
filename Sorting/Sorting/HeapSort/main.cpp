@@ -63,6 +63,7 @@ void HeapSort(int* arr, int n, compare comp)
 		}
 		heap[idx] = temp;
 	}
+	delete[] heap;
 }
 
 int main()
