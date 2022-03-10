@@ -25,7 +25,17 @@
       "ProjectGuid": "69563bf9-81a0-4d40-85df-f80b1dd55933",
       "DisplayName": "MergeSort",
       "ColorIndex": 4
+    },
+    "1798c20c-31d4-4165-a88e-d99595fa0fca": {
+      "ProjectGuid": "1798c20c-31d4-4165-a88e-d99595fa0fca",
+      "DisplayName": "QuickSort",
+      "ColorIndex": 5
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "기타 파일",
+      "ColorIndex": -1
     }
   },
-  "NextColorIndex": 5
+  "NextColorIndex": 6
 }
