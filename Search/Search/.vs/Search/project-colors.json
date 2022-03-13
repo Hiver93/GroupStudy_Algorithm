@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "7c584e25-9ee6-4e56-8a10-e4133569835d": {
+      "ProjectGuid": "7c584e25-9ee6-4e56-8a10-e4133569835d",
+      "DisplayName": "Search",
+      "ColorIndex": 0
+    },
+    "1b21923d-7501-4d2f-96d4-5a8a7a092f62": {
+      "ProjectGuid": "1b21923d-7501-4d2f-96d4-5a8a7a092f62",
+      "DisplayName": "InterpolationSearch",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
